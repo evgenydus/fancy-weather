@@ -1,0 +1,4 @@
+/dist
+/.idea
+src/js/unused/
+node_modules
