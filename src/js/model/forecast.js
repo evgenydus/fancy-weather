@@ -1,4 +1,4 @@
-import { get, withUnit } from '../unused/utils';
+import { get, withUnit } from '../helpers/utils';
 import { getWeekDay } from '../view/date';
 
 const units = 'si';

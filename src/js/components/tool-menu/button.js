@@ -1,4 +1,4 @@
-import createElement from '../../utils/create-element';
+import createElement from '../../helpers/create-element';
 
 export class Button {
   constructor(title, id) {

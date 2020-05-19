@@ -3,7 +3,7 @@ import createForecastBlock from './view/forecast';
 import createLocationBlock from './view/map';
 import { wrapper, tempUnits } from './constants';
 import { getDateTimeString } from './view/date';
-import { withUnit } from './unused/utils';
+import { withUnit } from './helpers/utils';
 
 class View {
   constructor() {

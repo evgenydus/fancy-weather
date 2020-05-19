@@ -1,6 +1,6 @@
-import { createElement } from '../../unused/utils';
+import createElement from '../../helpers/create-element';
 import { toolbar } from './toolbar';
-import append from '../../utils/append';
+import append from '../../helpers/append';
 
 
 export default {

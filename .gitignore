@@ -3,3 +3,4 @@
 src/js/unused/
 node_modules
 .editorconfig
+unused/

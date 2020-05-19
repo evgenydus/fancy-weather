@@ -1,4 +1,4 @@
-import get from '../utils/get';
+import { get } from './utils';
 
 export const locationUrl = 'https://ipinfo.io/json?token=c142541b052938';
 

@@ -1,7 +1,7 @@
 import { Button } from './button';
 import updateBackgroundFor from '../../helpers/update-background-for';
-import { createElement } from '../../unused/utils';
-import append from '../../utils/append';
+import createElement from '../../helpers/create-element';
+import append from '../../helpers/append';
 
 export const toolbar = {
   button: new Button({ title: 'loop', onClick: () => updateBackgroundFor('') }),
