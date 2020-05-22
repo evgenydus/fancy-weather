@@ -87,7 +87,8 @@ class View {
       daily,
     } = weather;
 
-    this.skycons.set('iconMain', icon.toUpperCase().replace(/-/g, '_'));
+    // TODO: fix icons
+    // this.skycons.set('iconMain', icon.toUpperCase().replace(/-/g, '_'));
     this.temperatureValueEl.innerHTML = temp;
     this.summaryEl.innerText = summary;
     this.feelsLikeEl.innerHTML = `Feels Like: ${feelsLike}`;
@@ -95,11 +96,11 @@ class View {
     this.humidityEl.innerText = `Humidity: ${humidity}`;
 
     daily.forEach((day, index) => {
-      this.skycons.set(`iconDay${index + 1}`, day.icon);
+      // this.skycons.set(`iconDay${index + 1}`, day.icon);
       this[`day${index + 1}`].innerText = day.weekDay;
       this[`day${index + 1}Conditions`].innerHTML = day.temp;
     });
-    this.skycons.play();
+    // this.skycons.play();
   }
 
   showCoordinates({ lat, lon }) {

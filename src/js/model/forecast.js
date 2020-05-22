@@ -13,8 +13,8 @@ const getWeather = ({ lat, lon }) => {
           summary: currently.summary,
           feelsLike: withUnit(Math.round(currently.apparentTemperature)),
           wind: withUnit(Math.round(currently.windSpeed), ' m/s'),
-          humidity: withUnit(currently.humidity * 100, '%'),
-          icon: currently.icon,
+          humidity: withUnit(Math.round(currently.humidity * 100), '%'),
+          icon: currently.icon.toUpperCase().replace(/-/g, '_'),
         },
         daily: [
           {
